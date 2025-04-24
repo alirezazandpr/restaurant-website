@@ -135,38 +135,51 @@ img{
 
 
 
-.link_navgation a:first-child{
+.link_navgation a:first-child {
     color: var(--color_C90000);
     font-weight: 400;
-   
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
-.link_navgation a:last-child{
+
+.link_navgation a:first-child:hover {
+    color: var(--color_fff);
+    background-color: var(--color_C90000);
+    border-radius: 100px;
+    padding: 9px 16px;
+}
+
+.link_navgation a:last-child {
     background-color: var(--color_C90000);
     color: var(--color_fff);
     font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.link_navgation a:last-child:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
 #close_icon{
     display: none;
     color: var(--color_504F4F);
 }
-.nav_menu_sidbar{
-    flex-direction: column;
+.nav_menu_sidbar {
+    display: none;
     position: fixed;
     left: 0;
-    background-color:var(--color_fff);
+    background-color: var(--color_fff);
     height: 100%;
     top: 0;
-    padding: 1rem;
-    width: 200px;
+    padding: 0;
+    width: 0;
     z-index: 100;
-    border-right: 2px solid var(--color_504F4F);
-    transform: translateX(-384px);
-    transition: all 250ms ease-out;
-    -webkit-transition: all 250ms ease-out;
-    -moz-transition: all 250ms ease-out;
-    -ms-transition: all 250ms ease-out;
-    -o-transition: all 250ms ease-out;
+    border-right: none;
+    transform: translateX(-100%);
+    transition: none;
 }
+
 #input_menu:checked + label + ul{
     transform: translateX(0);
     -webkit-transform: translateX(0);
@@ -293,6 +306,25 @@ img{
 .button_action_order span::before{
     margin-right: 12px;   
 }
+.button_order_now {
+    display: inline-block;
+    background-color: var(--color_C90000);
+    color: var(--color_fff);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button_order_now:hover {
+    background-color: var(--color_FFC300);
+    transform: scale(1.05);
+}
 .action_order > button{
     display: flex;
     justify-content: center;
@@ -363,6 +395,31 @@ img{
     color: var(--color_323232)  !important;
     font-weight: 600 !important;
 }
+.button_category {
+    position: relative;
+    overflow: hidden;
+}
+
+.button_category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color_FFC300);
+    transition: width 0.3s ease;
+    z-index: 0;
+}
+
+.button_category:hover::before {
+    width: 100%;
+}
+
+.button_category span {
+    position: relative;
+    z-index: 1;
+}
 .row_grid_food_products{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
@@ -375,10 +432,16 @@ img{
     padding: 16px;
     border-radius: 12px;
     position: relative;
+    transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+}
+
+.item_food_grid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .badge_discount{
     width: 48px;

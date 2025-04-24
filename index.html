@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>restaurant-website</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="/css/media.css">
 </head>
 <body>
 
@@ -90,7 +90,7 @@
                                       </svg>
                                 </button>
                             </div>
-                            <button>
+                            <button class="button_order_now">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z" fill="#323232"/>
                                     <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z" fill="#323232"/>
@@ -165,7 +165,7 @@
                           </svg>
                           <span>Best seller</span>
                     </button>
-                    <button>
+                    <button class="button_category">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M2 14C2 13.4477 2.44772 13 3 13H21C21.5523 13 22 13.4477 22 14C22 14.5523 21.5523 15 21 15H3C2.44772 15 2 14.5523 2 14Z" fill="#504F4F"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3 10C3 6.68629 5.68629 4 9 4H15C18.3137 4 21 6.68629 21 10C21 10.5523 20.5523 11 20 11H4C3.44772 11 3 10.5523 3 10ZM9 8C9 8.55228 8.55228 9 8 9C7.44772 9 7 8.55228 7 8C7 7.44772 7.44772 7 8 7C8.55228 7 9 7.44772 9 8ZM12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9ZM17 8C17 8.55228 16.5523 9 16 9C15.4477 9 15 8.55228 15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8Z" fill="#504F4F"/>
@@ -173,21 +173,21 @@
                           </svg>
                           <span>Hamberger</span>
                     </button>
-                    <button>
+                    <button class="button_category">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M2 19C2 18.4477 2.44772 18 3 18H17C17.5523 18 18 18.4477 18 19C18 19.5523 17.5523 20 17 20H3C2.44772 20 2 19.5523 2 19Z" fill="#504F4F"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C2.89543 4 2 4.89543 2 6V8C2 12.4183 5.58172 16 10 16C12.5264 16 14.7793 14.8289 16.2454 13H18.5C20.433 13 22 11.433 22 9.5C22 7.567 20.433 6 18.5 6H18C18 4.89543 17.1046 4 16 4H4ZM18 8C18 9.0609 17.7935 10.0736 17.4185 11H18.5C19.3284 11 20 10.3284 20 9.5C20 8.67157 19.3284 8 18.5 8H18Z" fill="#504F4F"/>
                           </svg>
                           <span>Drink</span>
                     </button>
-                    <button>
+                    <button class="button_category">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M7.50668 15.3511C7.26153 14.6974 7.74481 14 8.44301 14H15.557C16.2552 14 16.7385 14.6974 16.4933 15.3511L14.7023 20.1273C14.2799 21.2538 13.203 22 12 22C10.797 22 9.72017 21.2538 9.29777 20.1273L7.50668 15.3511Z" fill="#504F4F"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9754 6.5007C17.0026 6.7755 17.2239 7 17.5 7C18.8807 7 20 8.11929 20 9.5C20 10.8807 18.8807 12 17.5 12H12H6.5C5.11929 12 4 10.8807 4 9.5C4 8.11929 5.11929 7 6.5 7C6.77614 7 6.99737 6.7755 7.02462 6.5007C7.27516 3.9737 9.40709 2 12 2C14.5929 2 16.7248 3.9737 16.9754 6.5007Z" fill="#504F4F"/>
                           </svg>
                           <span>Dessert</span>
                     </button>
-                    <button>
+                    <button class="button_category">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M3 17.8C3 17.3582 3.35817 17 3.8 17H20.2C20.6418 17 21 17.3582 21 17.8C21 19.5673 19.5673 21 17.8 21H6.2C4.43269 21 3 19.5673 3 17.8Z" fill="#504F4F"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.8 17C3.35817 17 3 17.3582 3 17.8C3 19.5673 4.43269 21 6.2 21H17.8C19.5673 21 21 19.5673 21 17.8C21 17.3582 20.6418 17 20.2 17H3.8Z" fill="#504F4F"/>
