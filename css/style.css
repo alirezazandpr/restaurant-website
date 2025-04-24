@@ -168,16 +168,16 @@ img{
 .nav_menu_sidbar {
     display: none;
     position: fixed;
-    left: 0;
-    background-color: var(--color_fff);
-    height: 100%;
     top: 0;
-    padding: 0;
+    left: 0;
     width: 0;
+    height: 100%;
+    background-color: var(--color_fff);
     z-index: 100;
-    border-right: none;
     transform: translateX(-100%);
-    transition: none;
+    transition: transform 0.3s ease, width 0.3s ease;
+    overflow: hidden;
+    border-right: 1px solid var(--color_E3E3E3);
 }
 
 #input_menu:checked + label + ul{
