@@ -1,17 +1,26 @@
-# Restaurant Website
+# 🍽️ Restaurant Website
 
-A professional restaurant website built with HTML and CSS to showcase restaurant details, menu, gallery, and contact information.
+Welcome to the **Restaurant Website**, a stylish and fully responsive site built to showcase your restaurant's identity, menu, and more — all with pure HTML and CSS.
 
-## Live Preview
+## 🚀 Live Preview
 
-Click the link below to view the live website:
+Check it out live here:  
+[**View Website**](https://alirezazandpr.github.io/restaurant-website/)
 
-[View Website](https://alirezazandpr.github.io/restaurant-website/)
+---
 
-## Features
+## ✨ Features
 
-- Responsive and modern design
-- Restaurant introduction section
-- Stylish food menu
-- Image gallery
-- Contact form
+- 📱 **Responsive Design** – Looks great on all devices  
+- 🧾 **Interactive Menu** – A beautiful layout to display dishes  
+- 🖼️ **Image Gallery** – Showcase your food and atmosphere  
+- ✉️ **Contact Section** – Let customers reach out easily
+
+---
+
+## 🛠️ Built With
+
+This project was created using:
+
+- **HTML5** – Structure and content  
+- **CSS3** – Styling and layout  
